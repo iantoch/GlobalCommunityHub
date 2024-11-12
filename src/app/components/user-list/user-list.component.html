@@ -1,0 +1,4 @@
+<div *ngFor="let user of users" (click)="selectUser(user)">
+  {{ user.name }}
+</div>
+<app-user-profile *ngIf="selectedUser" [user]="selectedUser"></app-user-profile>

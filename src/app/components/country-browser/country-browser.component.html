@@ -1,0 +1,8 @@
+<input [(ngModel)]="countryCode" placeholder="Enter country code (e.g., US)" />
+<button (click)="fetchCountry()">Search</button>
+<div *ngIf="country">
+  <h3>{{ country.name }}</h3>
+  <p>Capital: {{ country.capital }}</p>
+  <p>Currency: {{ country.currency }}</p>
+  <p>Continent: {{ country.continent.name }}</p>
+</div>
